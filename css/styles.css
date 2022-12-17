@@ -1,0 +1,47 @@
+* {
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    /* min-width: 1000px; */
+}
+
+p {
+    font-size: 1.45rem;
+    font-weight: 300;
+}
+
+.icon {
+    color: black !important;
+}
+
+.medicine-info-container {
+    max-width: 1250px !important;
+}
+
+.medicine-image {
+    max-width: 380px !important;
+    width: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.medicine-title {
+    font-weight: 500;
+}
+
+.medicine-subtitle {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.medicine-info-title {
+    font-weight: 500;
+}
+
+.medicine-info-para {
+    font-size: 1.55rem;
+    font-weight: 300;
+}
