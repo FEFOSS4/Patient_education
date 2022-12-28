@@ -14,6 +14,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <!-- Later... -->
 
 
@@ -40,41 +42,66 @@
 
     <hr style="height:2px; background-color:gray">
 
-    
+
 
     <!-- The navbar -->
-    <nav class="navbar">
-        <ul class="medi-list">
-            <li class="medi-item">
-                <a href="" class="medi-link">
-                    <span class="medi-text">درجز</span>
-                </a>
-            </li>
-            <li class="medi-item">
-                <a href="" class="medi-link">
-                    <span class="medi-text">من نحن </span>
-                </a>
-            </li>
-            
-        </ul>
-
-    </nav>
-        
-    <!-- medi list -->
-        <!-- <div class="card text-dark bg-light border-dark shadow p-3" style="width: 120px;">
-            <div class="medi-list">
-                <h5 class="card-title-end">الأدوية</h5>
-                <h6 class="card-subtitle mb-2 text-end fs-6">نوع الدواء</h6>
-                <h6 class="card-subtitle mb-2 text-end fs-6">نوع الدواء</h6>
-                <h6 class="card-subtitle mb-2 text-end fs-6">نوع الدواء</h6>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">دوائي</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li>
+          <a href="#" class="desktop-item">الأدوية</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">الأدوية</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="images/logo.jpg" alt="">
+              </div>
+              <div class="row">
+                <header>كاتقوري 1</header>
+                <ul class="mega-links">
+                  <li><a href="#">رقم 1</a></li>
+                  <li><a href="#">رقم 2</a></li>
+                  <li><a href="#">رقم 3 </a></li>
+                  <li><a href="#">رقم 4</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>كاتقوري 1</header>
+                <ul class="mega-links">
+                  <li><a href="#">رقم 1</a></li>
+                  <li><a href="#">رقم 2</a></li>
+                  <li><a href="#">رقم 3 </a></li>
+                  <li><a href="#">رقم 4</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>كاتقوري 1</header>
+                <ul class="mega-links">
+                  <li><a href="#">رقم 1</a></li>
+                  <li><a href="#">رقم 2</a></li>
+                  <li><a href="#">رقم 3 </a></li>
+                  <li><a href="#">رقم 4</a></li>
+                </ul>
+              </div>
             </div>
-        </div> -->
+          </div>
+        </li>
+        <li><a href="#">من نحن!</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
     <!-- medi info -->
     <div class="medi-container">
         <div class="card">
             <img src="https://www.w3schools.com/howto/img_avatar.png" class="d-block w-100 medi-img">
             <div class="medi-info">
-                
+
                 <h5 class="card-title">بنادول</h5>
                 <p class="card-text">يزيل الصداع</p>
             </div>
@@ -82,7 +109,7 @@
         <div class="card">
             <img src="https://www.w3schools.com/howto/img_avatar.png" class="d-block w-100 medi-img">
             <div class="medi-info">
-                
+
                 <h5 class="card-title">بنادول</h5>
                 <p class="card-text">يزيل الصداع</p>
             </div>
@@ -90,7 +117,7 @@
         <div class="card">
             <img src="https://www.w3schools.com/howto/img_avatar.png" class="d-block w-100 medi-img">
             <div class="medi-info">
-                
+
                 <h5 class="card-title">بنادول</h5>
                 <p class="card-text">يزيل الصداع</p>
             </div>
