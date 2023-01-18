@@ -7,13 +7,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>2 3bds 1 project!</title>
+    <title>دوائي</title>
 
     <!-- icon -->
     <!-- To be set later-->
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,43 +30,89 @@
 
 <body>
 
-    <div style="height: 75px;"></div>
+
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo" src="images/icon.png" alt="Logo image">
+                    دوائي
+                </a>
+            </div>
+            <i class='bx bx-menu'></i>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <i class='bx bx-x'></i>
+                    <span class="logo-name">دوائي</span>
+                </div>
+                <ul class="links">
+                    <li>
+                        <a href="#">تصنيفات الأدوية</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="index.html">الأطفال</a></li>
+                            <li><a href="women.html">السيدات</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">من نحن؟</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container text-end medicine-info-container">
         <div class="row">
-            <h1 class="medicine-title">سيفيلامير</h1>
-            <p class="medicine-subtitle">ريناجل، رينفيلا</p>
+            <div class="col">
+                <h1 class="medicine-title">سيفيلامير</h1>
+                <p class="medicine-subtitle">ريناجل، رينفيلا <b class="badge bg-secondary">حبوب</b></p>
+            </div>
         </div>
         <hr>
         <div class="row">
 
             <!-- Medicine image -->
 
-            <div class="col-sm-2 mx-auto">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active " aria-current="true" aria-label="Image 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Image 2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/sevelamer1.png" class="d-block w-100 medicine-image" alt="Drug image">
+            <div class="col-sm-4 mx-auto">
+                <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel slide" style="padding-bottom: 50px;"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active " aria-current="true" aria-label="Image 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Image 2"></button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/sevelamer2.jpg" class="d-block w-100 medicine-image" alt="Drug image">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/sevelamer1.png" class="d-block w-100 medicine-image" alt="Drug image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sevelamer2.jpg" class="d-block w-100 medicine-image" alt="Drug image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-success qrbutton" onclick="generateQrCode();">طباعة رمز QR</button>
+                    <div id="overlay">
+                        <div id="popup">
+                            <div class="popup-header">
+                                <p id="page-url"></p>
+                                <i class="bi bi-x-circle" onclick="hidepopup();"></i>
+                            </div>
+                            <div id="qr-code"></div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
 
@@ -84,25 +133,44 @@
                     <p class="medicine-info-para">تغير لون البراز الى الأسود.</p>
                 </div>
                 <div class="row">
-                    <h2 class="medicine-info-title">الاعراض الجانبية الأكثر شيوعا</h2>
+                    <h2 class="medicine-info-title">الاعراض الجانبية الشائعة</h2>
                     <p class="medicine-info-para">إسهال، إمساك، غثيان، الام في المعدة و غازات.</p>
                 </div>
                 <div class="row">
                     <h2 class="medicine-info-title">إرشادات المريض</h2>
                     <p class="medicine-info-para">
                         قد يؤدي هذا الدواء (سيفيلامير) الى انخفاض في الفيتامينات وحمض الفوليك.
-                        راجع الطبيب في حال كنت من من يحتاجون الى كميات إضافية من الفيتامينات او حمض الفوليك.
+                        راجع الطبيب في حال كنت من من يحتاجون الى كميات إضافية من الفيتامينات أو حمض الفوليك.
                     </p>
                 </div>
             </div>
+            <div class="row">
+                <div class="bs-callout bs-callout-success">
+                    <span style="display: flex;">
+                        <img class="notice-icon" src="images/warning.svg" alt="notice">
+                        <h4>ملاحظة</h4>
+                    </span>
+                    <ul>
+                        <li>
+                            إذا كنت تأخذ أحد هذه الادوية سيكلوسبورين، ليفوثيروكسين، تاكروليمس، فيجب عليك اخذهم قبل
+                            سيفيلامير
+                            بساعة واحدة او بعده بثلاث ساعات.
+                        </li>
+                        <li>
+                            إذا كنت تأخذ سيبروفلوكساسين فخذه قبل الدواء بساعتين او بعد 6 ساعات من اخذه.
+                        </li>
+                        <li>
+                            إذا كنت تأخذ ميكوفينوليت فخذه قبل الدواء بساعتين على الأقل.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="row"></div>
     </div>
 
-    <br>
-    <hr>
+    <footer>
 
-    <p>&copy; This website was created by Abdul-rahman, Abdul-aziz, Faisal Alqurashi and Ayob bomnther. &trade;".</p>
+    </footer>
 
     <!-- BOOTSTRAP JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -113,7 +181,9 @@
     <!--ok maybe-->
 
     <!-- JavaScript -->
-    <!--Maybe later ?-->
+    <script src="scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
 </body>
 
 </html>
