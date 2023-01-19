@@ -533,3 +533,25 @@ nav .navbar .links li:hover .js-sub-menu {
     max-width: 100%;
   }
 }
+
+/* ayob css */
+
+.card{
+  align-items: center;
+}
+
+.btn{
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+.medi-name{
+  font-weight: 500;
+  font-size: 22;
+}
+.cat-lead{
+  text-align: center;
+  font-size: 77px;
+}
