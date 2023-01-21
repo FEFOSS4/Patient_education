@@ -73,7 +73,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 110;
 }
 
@@ -90,8 +90,8 @@ p {
   background-color: #FFF;
   border: 5px solid #17A858;
   border-radius: 5px 5px 25px 25px;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #popup .popup-header {
@@ -115,7 +115,7 @@ p {
   line-height: 35px;
   font-size: 1.15rem;
   width: 85%;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   color: #FFF;
@@ -125,8 +125,13 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-40%);
-  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.medicine-info-col {
+  margin: auto 0 auto 0 !important;
+  border-right: 1px solid #C8C9CA;
 }
 
 .medicine-title {
@@ -538,13 +543,6 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .card{
   align-items: center;
-}
-
-.btn{
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-  
 }
 
 .medi-name{
