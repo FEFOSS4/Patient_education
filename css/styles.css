@@ -548,8 +548,16 @@ nav .navbar .links li:hover .js-sub-menu {
 .medic-card{
   height: 150px;
   width: 100%;
-  object-fit: cover;
-  
+  object-fit: contain;
+}
+
+.column a{
+  color: black;
+  text-decoration: none;
+}
+
+.column a:hover{
+  color: black;
 }
 
 .medi-name{
