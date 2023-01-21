@@ -545,6 +545,13 @@ nav .navbar .links li:hover .js-sub-menu {
   align-items: center;
 }
 
+.medic-card{
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
 .medi-name{
   font-weight: 500;
   font-size: 22;
@@ -552,4 +559,60 @@ nav .navbar .links li:hover .js-sub-menu {
 .cat-lead{
   text-align: center;
   font-size: 77px;
+}
+
+.carousel-cell {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-cell img {
+
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
+
+.flickity-button {
+  background: #333;
+}
+.flickity-button:hover {
+  background: #F90;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
 }
