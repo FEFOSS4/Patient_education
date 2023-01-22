@@ -113,18 +113,6 @@
       </div>
       <div class="col-md col-sm-2">
         <div class="column">
-          <a href="nystatin.html">
-            <div class="card">
-              <input class="medic-card" type="image" src="images/nystatin1.png" name="saveForm" id="saveForm">
-              <p class="medi-name">
-                نيستاتين
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md col-sm-2">
-        <div class="column">
           <a href="ferrous.html">
             <div class="card">
               <input class="medic-card" type="image" src="images/ferrous1.png" name="saveForm" id="saveForm">
@@ -181,6 +169,19 @@
               </p>
             </div>
           </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" class="btn btn-success qrbutton" onclick="generateQrCode();">طباعة رمز
+        QR</button>
+      <div id="overlay">
+        <div id="popup">
+          <div class="popup-header">
+            <p id="page-url"></p>
+            <i class="bi bi-x-circle" onclick="hidepopup();"></i>
+          </div>
+          <div id="qr-code"></div>
         </div>
       </div>
     </div>
